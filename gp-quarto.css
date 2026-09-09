@@ -8,7 +8,7 @@
   --r-link-color-hover: var(--gp-ink);
   --r-controls-color: var(--gp-ink);
   --r-selection-background-color: rgba(168, 75, 55, 0.18);
-  --gp-footer-text: "NOICHL & BROERSEN 2026 - AGENTIC LLMS FOR ARGUMENT MINING";
+  --gp-footer-text: "NOICHL & BROERSEN / LNGAI 2026 / BARCELONA";
 }
 
 .reveal .slide-menu-button,
@@ -233,7 +233,7 @@
   align-self: start;
 }
 
-/* Utrecht deck: long talk title needs a wider, slightly smaller display title. */
+/* Talk title needs a wider, slightly smaller display title. */
 .reveal .slides section.gp-title .gp-code {
   max-width: 24ch;
   font-size: 84px;
@@ -243,7 +243,7 @@
   max-width: 44ch;
 }
 
-/* Utrecht deck: denser bullet slides for long keynote content. */
+/* Denser bullet slides for longer content. */
 .reveal .slides section.gp-slide.gp-dense {
   --gp-list-size: 36px;
 }
@@ -256,7 +256,7 @@
   margin: 12px 0;
 }
 
-/* Utrecht deck: references can exceed the slide; scroll them subtly. */
+/* References can exceed the slide; scroll them subtly. */
 .reveal .slides section.gp-references #refs {
   max-height: 740px;
   overflow-y: auto;
@@ -277,7 +277,7 @@
   background: transparent;
 }
 
-/* Utrecht deck: full-bleed three-panel argument-scheme exhibit with pan/zoom.
+/* Full-bleed three-panel argument-scheme exhibit with pan/zoom.
    Overrides all slide chrome (running head, marks, folio, corner matrix). */
 .reveal .slides section.gp-schemes-full {
   padding: 0;

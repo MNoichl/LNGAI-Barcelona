@@ -1,12 +1,25 @@
-# Arg-Agents-Utrecht
+# LNGAI-Barcelona
 
-Slides for **"Agentic LLMs for Argument Mining in Philosophical Texts"** (Max
-Noichl & Jan Broersen), HAI-Workshop *Symbolic and Neuro-Symbolic AI: Reasoning
-and Learning*, Utrecht, 2026.
+Slides for **"Agentic LLMs for Argument Mining in Philosophical Texts"**
+(Maximilian Noichl & Jan Broersen), presented at the
+[Sixth International Workshop on Logics and Argumentation for New-Generation
+Artificial Intelligence (LNGAI 2026)](https://www.zlaire.net/lngai2026/),
+co-located with COMMA 2026 in Barcelona, Spain, on 14 September 2026.
+
+The talk is listed in [Session 03: Argument Mining](https://www.zlaire.net/lngai2026/program.html).
+The [workshop venue](https://comma2026.vercel.app/venue/) is the CSIC Delegation
+in Catalonia, Carrer de les Egipcíaques, 15, Barcelona.
 
 The deck is `index.qmd`, rendered with Quarto Reveal.js; the rendered site is
 committed (`index.html` + `index_files/`) for hosting. Large local data files
 and the unpublished paper draft are excluded via `.gitignore`.
+
+Git uses an explicit allowlist for the slide source, configuration, template
+files, modal extension, bibliography, and six figures used by the talk. Other
+local material (old decks, notebooks, datasets, unused images, and drafts) stays
+on disk but is ignored, including material inside template directories. Add
+new source files or figures to `.gitignore` when the deck starts using them.
+The generated libraries in `index_files/libs/` remain tracked for hosting.
 
 ---
 

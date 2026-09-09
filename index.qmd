@@ -1,25 +1,25 @@
 ---
-pagetitle: "Agentic LLMs for Argument Mining in Philosophical Texts - Utrecht"
+pagetitle: "Agentic LLMs for Argument Mining in Philosophical Texts - LNGAI 2026, Barcelona"
 bibliography:
   - COMMA_LLM_arg_parsing/sample.bib
 cite-method: citeproc
 link-citations: false
 ---
-# Agentic LLMs for Argument Mining in Philosophical Texts {layout="title" data-gp-kicker="HAI-WORKSHOP / ESDiT" data-gp-code="Agentic LLMs for Argument Mining in Philosophical Texts" data-gp-section="Title"}
+# Agentic LLMs for Argument Mining in Philosophical Texts {layout="title" data-gp-kicker="LNGAI 2026 / COMMA 2026" data-gp-code="Agentic LLMs for Argument Mining in Philosophical Texts" data-gp-section="Title"}
 
 ::: {.gp-subtitle}
-HAI-Workshop 'Symbolic and Neuro-Symbolic AI: Reasoning and Learning'
+Logics and Argumentation for New-Generation AI
 :::
 
 ::: {.gp-meta-grid}
 ::: {.gp-block}
-<span class="gp-label">Speakers</span> Max Noichl & Jan Broersen
+<span class="gp-label">Authors</span> Maximilian Noichl & Jan Broersen
 :::
 ::: {.gp-block}
 <span class="gp-label">Affiliation</span> Theoretical Philosophy, Utrecht University, The Netherlands
 :::
 ::: {.gp-block}
-<span class="gp-label">Venue</span> Utrecht University Library - Drift 27, room 1.25 (Tielezaal)
+<span class="gp-label">Venue & date</span> CSIC Delegation in Catalonia, Barcelona<br>14 September 2026
 :::
 :::
 
