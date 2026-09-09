@@ -5,7 +5,7 @@ bibliography:
 cite-method: citeproc
 link-citations: false
 ---
-# Agentic LLMs for Argument Mining in Philosophical Texts {layout="title" data-gp-kicker="LNGAI 2026 / COMMA 2026" data-gp-code="Agentic LLMs for Argument Mining in Philosophical Texts" data-gp-section="Title"}
+# Agentic LLMs for Argument Mining in Philosophical Texts {layout="title" data-gp-kicker="LNGAI 2026 / COMMA 2026" data-gp-code="Agentic LLMs for Argument Mining in Philosophical Texts" data-gp-section=""}
 
 ::: {.gp-subtitle}
 Logics and Argumentation for New-Generation AI
@@ -19,7 +19,7 @@ Logics and Argumentation for New-Generation AI
 <span class="gp-label">Affiliation</span> Theoretical Philosophy, Utrecht University, The Netherlands
 :::
 ::: {.gp-block}
-<span class="gp-label">Venue & date</span> CSIC Delegation in Catalonia, Barcelona<br>14 September 2026
+<span class="gp-label">Venue & date</span> CSIC, Barcelona<br>14 September 2026
 :::
 :::
 
@@ -62,7 +62,8 @@ Logics and Argumentation for New-Generation AI
 * Validity and 'completeness' checking of arguments in philosophical texts
 * A metric for further exploration of the body of knowledge that forms philosophy
 * Answering questions on differences between areas in philosophy
-* Exploring if philosophical argumentation is in some sense 'special' (not begging the question, collapsing the distinction, etc.)
+* Exploring if philosophical argumentation is in some sense 'special'
+* A building block for AI generated philosophy
 
 ::: aside
 [@Hintikka1970InformationDeductionAPriori; @Noichl2021; @Petrovich2024QuantitativePortrait; @MalaterreLareau2022]
@@ -74,7 +75,7 @@ Logics and Argumentation for New-Generation AI
 * An exact format (a formal language)
 * A level of abstraction
 * A formal semantics (an exact theory, in terms of the formal language, on what arguments are valid)
-* **Are LLMs examples of symbolic or sub-symbolic AI?**
+<!-- * **Are LLMs examples of symbolic  or sub-symbolic AI?** -->
 
 
 # Criteria for choosing a formal structure {layout="bullets" data-gp-section="Criteria"}
@@ -165,7 +166,7 @@ Logics and Argumentation for New-Generation AI
 
 # Conclusion & further work {layout="bullets" .gp-dense data-gp-section="Conclusion"}
 
-* Parsing arguments with agentic LLMs appears fully viable.
+* Parsing complex arguments with agentic LLMs appears viable.
 * But much remains to be done! 
 * What are the optimal argumentation frameworks & workflows?
 * How to integrate solvers & verifiers?
