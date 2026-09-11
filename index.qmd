@@ -29,13 +29,13 @@ Logics and Argumentation for New-Generation AI
 * Research question and motivation
 * Argumentation in philosophy
 * Choosing argumentation frameworks
-* Pilot study & Results
+* Pilot study & results
 
 
 # Research Questions {layout="bullets" .gp-dense data-gp-section="Research Questions"}
 
 * Can we use LLMs to analyse and map out the argumentative structures of philosophical texts, leveraging the symbolic knowledge captured by formal argumentation frameworks?
-* How can such a system work, how do we validate it?
+* How can such a system work, and how do we validate it?
 <!-- * Method:
     - One informal framework + Dung + Carneades
     - Use agentive LLMs to break down the analysis in controllable steps
@@ -63,7 +63,7 @@ Logics and Argumentation for New-Generation AI
 * A metric for further exploration of the body of knowledge that forms philosophy
 * Answering questions on differences between areas in philosophy
 * Exploring if philosophical argumentation is in some sense 'special'
-* A building block for AI generated philosophy
+* A building block for AI-generated philosophy
 
 ::: aside
 [@Hintikka1970InformationDeductionAPriori; @Noichl2021; @Petrovich2024QuantitativePortrait; @MalaterreLareau2022]
@@ -81,7 +81,7 @@ Logics and Argumentation for New-Generation AI
 # Criteria for choosing a formal structure {layout="bullets" data-gp-section="Criteria"}
 
 * Do we, apart from a formal syntax, require a formal semantics?
-* Are positions/statements (targets or starting points for defense or attack) atomic or structured?
+* Are positions/statements (targets or starting points for defence or attack) atomic or structured?
 * Do we allow for hierarchy?
 * Does a scheme only have attack relations or also support relations? Do we distinguish between different kinds of them?
 
@@ -94,7 +94,8 @@ Logics and Argumentation for New-Generation AI
 
 * Dung: abstract (only arguments and attacks)
 * ASPIC+: structured (premisses, different kinds of support, etc.) [Attack types](#){.fragment .opens-modal data-modal-type="image" data-modal-url="images/carneades_attack_types.png" data-modal-navblock="true"}
-* Carneades
+* Carneades: statements and arguments
+* Free: just suggest a graph structure.
 
 ::: aside
 [@Dung1995; @ModgilPrakken2014; @GordonPrakkenWalton2007Carneades]
@@ -119,7 +120,7 @@ Logics and Argumentation for New-Generation AI
 # Pilot study: Workflow {layout="bullets" .gp-dense data-gp-section="Workflow"}
 
 * Agentic loop, not single-pass: arguments are distributed nonlinearly across philosophical texts.
-* GPT-5.4 in OpenAI's Codex CLI: tool-use, repeated text-lookups, iterative work.
+* GPT-5.4 in OpenAI's Codex CLI: tool use, repeated text lookups, iterative work.
   * Pass 1: work through the whole text (Markdown) & annotate argument passages.
   * Pass 2: build a JSON argument graph, according to guidelines — generic, Dung- & Carneades-style.
 * 63 graphs (21 papers × 3 schemes), laid out with Graphviz.
@@ -155,8 +156,9 @@ Logics and Argumentation for New-Generation AI
 <!-- * Holistic check of papers we know well: reconstruction of argumentative lines impressively good. -->
 <!-- (92%, 95% Wilson CI [81.2%, 96.8%]). -->
 * Human validation: 46 of 50 sampled links appear fully justified.
-* LLM-assisted audit (Opus 4.6): no critical *faithfulness* deviations in any scheme; 1–2 major deviations at median. [Validation](#){.fragment .opens-modal data-modal-type="image" data-modal-url="images/argument_graph_eval_outcomes.svg" data-modal-navblock="true"}
+* LLM-assisted audit (Opus 4.6): no critical *faithfulness* deviations in any scheme; 1–2 major deviations at the median. [Validation](#){.fragment .opens-modal data-modal-type="image" data-modal-url="images/argument_graph_eval_outcomes.svg" data-modal-navblock="true"}
 * But: Carneades is hard to follow: sig. more *guideline* deviations.
+* WIP: LLM audit catches introduced errors.
 * Graph structure tracks the schemes: generic → fewest components; Dung → denser, shallower; Carneades → deeper, bipartite. [Graph features](#){.fragment .opens-modal data-modal-type="image" data-modal-url="images/argument_graph_stats.svg" data-modal-navblock="true"}
 
 ::: aside
@@ -167,7 +169,8 @@ Logics and Argumentation for New-Generation AI
 # Conclusion & further work {layout="bullets" .gp-dense data-gp-section="Conclusion"}
 
 * Parsing complex arguments with agentic LLMs appears viable.
-* But much remains to be done! 
+* But much remains to be done!
+* Evaluation at high complexity is tough & expensive.
 * What are the optimal argumentation frameworks & workflows?
 * How to integrate solvers & verifiers?
 

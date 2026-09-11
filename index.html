@@ -187,14 +187,14 @@
 <li>Research question and motivation</li>
 <li>Argumentation in philosophy</li>
 <li>Choosing argumentation frameworks</li>
-<li>Pilot study &amp; Results</li>
+<li>Pilot study &amp; results</li>
 </ul>
 </section>
 <section id="research-questions" class="slide level1 gp-dense" data-layout="bullets" data-gp-section="Research Questions">
 <h1>Research Questions</h1>
 <ul>
 <li>Can we use LLMs to analyse and map out the argumentative structures of philosophical texts, leveraging the symbolic knowledge captured by formal argumentation frameworks?</li>
-<li>How can such a system work, how do we validate it? <!-- * Method:
+<li>How can such a system work, and how do we validate it? <!-- * Method:
     - One informal framework + Dung + Carneades
     - Use agentive LLMs to break down the analysis in controllable steps
     - The use of a specific dataset with [number] papers on philosophy of AI
@@ -219,7 +219,7 @@
 <li>A metric for further exploration of the body of knowledge that forms philosophy</li>
 <li>Answering questions on differences between areas in philosophy</li>
 <li>Exploring if philosophical argumentation is in some sense ‘special’</li>
-<li>A building block for AI generated philosophy</li>
+<li>A building block for AI-generated philosophy</li>
 </ul>
 
 <aside><div>
@@ -237,7 +237,7 @@
 <h1>Criteria for choosing a formal structure</h1>
 <ul>
 <li>Do we, apart from a formal syntax, require a formal semantics?</li>
-<li>Are positions/statements (targets or starting points for defense or attack) atomic or structured?</li>
+<li>Are positions/statements (targets or starting points for defence or attack) atomic or structured?</li>
 <li>Do we allow for hierarchy?</li>
 <li>Does a scheme only have attack relations or also support relations? Do we distinguish between different kinds of them?</li>
 </ul>
@@ -250,7 +250,8 @@
 <ul>
 <li>Dung: abstract (only arguments and attacks)</li>
 <li>ASPIC+: structured (premisses, different kinds of support, etc.) <a href="#/" class="fragment opens-modal" data-modal-type="image" data-modal-url="images/carneades_attack_types.png" data-modal-navblock="true">Attack types</a></li>
-<li>Carneades</li>
+<li>Carneades: statements and arguments</li>
+<li>Free: just suggest a graph structure.</li>
 </ul>
 
 <!-- # Pilot study {layout="divider" data-gp-kicker="Over to Max" data-gp-section="Pilot Study"} -->
@@ -272,7 +273,7 @@
 <h1>Pilot study: Workflow</h1>
 <ul>
 <li>Agentic loop, not single-pass: arguments are distributed nonlinearly across philosophical texts.</li>
-<li>GPT-5.4 in OpenAI’s Codex CLI: tool-use, repeated text-lookups, iterative work.
+<li>GPT-5.4 in OpenAI’s Codex CLI: tool use, repeated text lookups, iterative work.
 <ul>
 <li>Pass 1: work through the whole text (Markdown) &amp; annotate argument passages.</li>
 <li>Pass 2: build a JSON argument graph, according to guidelines — generic, Dung- &amp; Carneades-style.</li>
@@ -307,8 +308,9 @@
 <!-- (92%, 95% Wilson CI [81.2%, 96.8%]). -->
 <ul>
 <li>Human validation: 46 of 50 sampled links appear fully justified.</li>
-<li>LLM-assisted audit (Opus 4.6): no critical <em>faithfulness</em> deviations in any scheme; 1–2 major deviations at median. <a href="#/" class="fragment opens-modal" data-modal-type="image" data-modal-url="images/argument_graph_eval_outcomes.svg" data-modal-navblock="true">Validation</a></li>
+<li>LLM-assisted audit (Opus 4.6): no critical <em>faithfulness</em> deviations in any scheme; 1–2 major deviations at the median. <a href="#/" class="fragment opens-modal" data-modal-type="image" data-modal-url="images/argument_graph_eval_outcomes.svg" data-modal-navblock="true">Validation</a></li>
 <li>But: Carneades is hard to follow: sig. more <em>guideline</em> deviations.</li>
+<li>WIP: LLM audit catches introduced errors.</li>
 <li>Graph structure tracks the schemes: generic → fewest components; Dung → denser, shallower; Carneades → deeper, bipartite. <a href="#/" class="fragment opens-modal" data-modal-type="image" data-modal-url="images/argument_graph_stats.svg" data-modal-navblock="true">Graph features</a></li>
 </ul>
 
@@ -320,6 +322,7 @@
 <ul>
 <li>Parsing complex arguments with agentic LLMs appears viable.</li>
 <li>But much remains to be done!</li>
+<li>Evaluation at high complexity is tough &amp; expensive.</li>
 <li>What are the optimal argumentation frameworks &amp; workflows?</li>
 <li>How to integrate solvers &amp; verifiers?</li>
 </ul>
